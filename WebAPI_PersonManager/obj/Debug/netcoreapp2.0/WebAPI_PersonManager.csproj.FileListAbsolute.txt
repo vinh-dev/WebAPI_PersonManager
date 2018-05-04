@@ -1,0 +1,11 @@
+D:\Study\Angular_WebAPI\WebAPI_PersonManager\WebAPI_PersonManager\bin\Debug\netcoreapp2.0\WebAPI_PersonManager.deps.json
+D:\Study\Angular_WebAPI\WebAPI_PersonManager\WebAPI_PersonManager\bin\Debug\netcoreapp2.0\WebAPI_PersonManager.runtimeconfig.json
+D:\Study\Angular_WebAPI\WebAPI_PersonManager\WebAPI_PersonManager\bin\Debug\netcoreapp2.0\WebAPI_PersonManager.runtimeconfig.dev.json
+D:\Study\Angular_WebAPI\WebAPI_PersonManager\WebAPI_PersonManager\bin\Debug\netcoreapp2.0\WebAPI_PersonManager.dll
+D:\Study\Angular_WebAPI\WebAPI_PersonManager\WebAPI_PersonManager\bin\Debug\netcoreapp2.0\WebAPI_PersonManager.pdb
+D:\Study\Angular_WebAPI\WebAPI_PersonManager\WebAPI_PersonManager\obj\Debug\netcoreapp2.0\WebAPI_PersonManager.csproj.CoreCompileInputs.cache
+D:\Study\Angular_WebAPI\WebAPI_PersonManager\WebAPI_PersonManager\obj\Debug\netcoreapp2.0\WebAPI_PersonManager.AssemblyInfoInputs.cache
+D:\Study\Angular_WebAPI\WebAPI_PersonManager\WebAPI_PersonManager\obj\Debug\netcoreapp2.0\WebAPI_PersonManager.AssemblyInfo.cs
+D:\Study\Angular_WebAPI\WebAPI_PersonManager\WebAPI_PersonManager\obj\Debug\netcoreapp2.0\WebAPI_PersonManager.dll
+D:\Study\Angular_WebAPI\WebAPI_PersonManager\WebAPI_PersonManager\obj\Debug\netcoreapp2.0\WebAPI_PersonManager.pdb
+D:\Study\Angular_WebAPI\WebAPI_PersonManager\WebAPI_PersonManager\obj\Debug\netcoreapp2.0\WebAPI_PersonManager.csprojResolveAssemblyReference.cache
