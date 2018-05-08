@@ -9,3 +9,14 @@ D:\Study\Angular_WebAPI\WebAPI_PersonManager\WebAPI_PersonManager\obj\Debug\netc
 D:\Study\Angular_WebAPI\WebAPI_PersonManager\WebAPI_PersonManager\obj\Debug\netcoreapp2.0\WebAPI_PersonManager.dll
 D:\Study\Angular_WebAPI\WebAPI_PersonManager\WebAPI_PersonManager\obj\Debug\netcoreapp2.0\WebAPI_PersonManager.pdb
 D:\Study\Angular_WebAPI\WebAPI_PersonManager\WebAPI_PersonManager\obj\Debug\netcoreapp2.0\WebAPI_PersonManager.csprojResolveAssemblyReference.cache
+D:\STUDY\WebAPI_PersonManager\WebAPI_PersonManager\bin\Debug\netcoreapp2.0\WebAPI_PersonManager.deps.json
+D:\STUDY\WebAPI_PersonManager\WebAPI_PersonManager\bin\Debug\netcoreapp2.0\WebAPI_PersonManager.runtimeconfig.json
+D:\STUDY\WebAPI_PersonManager\WebAPI_PersonManager\bin\Debug\netcoreapp2.0\WebAPI_PersonManager.runtimeconfig.dev.json
+D:\STUDY\WebAPI_PersonManager\WebAPI_PersonManager\bin\Debug\netcoreapp2.0\WebAPI_PersonManager.dll
+D:\STUDY\WebAPI_PersonManager\WebAPI_PersonManager\bin\Debug\netcoreapp2.0\WebAPI_PersonManager.pdb
+D:\STUDY\WebAPI_PersonManager\WebAPI_PersonManager\obj\Debug\netcoreapp2.0\WebAPI_PersonManager.csprojAssemblyReference.cache
+D:\STUDY\WebAPI_PersonManager\WebAPI_PersonManager\obj\Debug\netcoreapp2.0\WebAPI_PersonManager.csproj.CoreCompileInputs.cache
+D:\STUDY\WebAPI_PersonManager\WebAPI_PersonManager\obj\Debug\netcoreapp2.0\WebAPI_PersonManager.AssemblyInfoInputs.cache
+D:\STUDY\WebAPI_PersonManager\WebAPI_PersonManager\obj\Debug\netcoreapp2.0\WebAPI_PersonManager.AssemblyInfo.cs
+D:\STUDY\WebAPI_PersonManager\WebAPI_PersonManager\obj\Debug\netcoreapp2.0\WebAPI_PersonManager.dll
+D:\STUDY\WebAPI_PersonManager\WebAPI_PersonManager\obj\Debug\netcoreapp2.0\WebAPI_PersonManager.pdb

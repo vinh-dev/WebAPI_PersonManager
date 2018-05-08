@@ -8,8 +8,8 @@ namespace WebAPI_PersonManager.Models.DataManager
 {
     public class PersonManager: IDataRepository<Person, long>
     {
-        PersonContext ctx;
-        public PersonManager(PersonContext c)
+        ManagerContext ctx;
+        public PersonManager(ManagerContext c)
         {
             ctx = c;
         }

@@ -13125,23 +13125,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\VINH\\.nuget\\packages\\": {},
+    "C:\\Users\\Hong Tran\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Study\\Angular_WebAPI\\WebAPI_PersonManager\\WebAPI_PersonManager\\WebAPI_PersonManager.csproj",
+      "projectUniqueName": "D:\\STUDY\\WebAPI_PersonManager\\WebAPI_PersonManager\\WebAPI_PersonManager.csproj",
       "projectName": "WebAPI_PersonManager",
-      "projectPath": "D:\\Study\\Angular_WebAPI\\WebAPI_PersonManager\\WebAPI_PersonManager\\WebAPI_PersonManager.csproj",
-      "packagesPath": "C:\\Users\\VINH\\.nuget\\packages\\",
-      "outputPath": "D:\\Study\\Angular_WebAPI\\WebAPI_PersonManager\\WebAPI_PersonManager\\obj\\",
+      "projectPath": "D:\\STUDY\\WebAPI_PersonManager\\WebAPI_PersonManager\\WebAPI_PersonManager.csproj",
+      "packagesPath": "C:\\Users\\Hong Tran\\.nuget\\packages\\",
+      "outputPath": "D:\\STUDY\\WebAPI_PersonManager\\WebAPI_PersonManager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\VINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Hong Tran\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

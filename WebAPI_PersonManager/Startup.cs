@@ -12,10 +12,11 @@ namespace WebAPI_PersonManager
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddDbContext<PersonContext>(opts => opts.UseSqlServer("ConnectionString:PersonDB"));
-            //services.AddSingleton(typeof(IDataRepository<Person, long>), typeof(PersonManager));
+            var PersonDB = "Server=.\\SQLEXPRESS;Database=QL_Person;Integrated Security=True;MultipleActiveResultSets=True";
+    
+            services.AddDbContext<ManagerContext>(options => options.UseSqlServer(PersonDB));
 
-            services.AddDbContext<PersonContext>(opt => opt.UseInMemoryDatabase("PersonList"));
+            //services.AddDbContext<ManagerContext>(opt => opt.UseInMemoryDatabase("PersonList"));
             services.AddDbContext<CustomerContext>(opt => opt.UseInMemoryDatabase("CustomerList"));
             services.AddDbContext<TodoContext>(opt => opt.UseInMemoryDatabase("todoList"));
 

@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using WebAPI_PersonManager.Models;
 
 namespace WebAPI_PersonManager.Controllers
@@ -10,29 +12,23 @@ namespace WebAPI_PersonManager.Controllers
     //[ApiController]
     public class PersonController : ControllerBase
     {
-        private readonly PersonContext _context;
+        private readonly ManagerContext _context;
 
-        public PersonController(PersonContext context)
+        public PersonController(ManagerContext context)
         {
             _context = context;
 
-            if (_context.PersonItems.Count() == 0)
-            {
-                _context.PersonItems.Add(new Person { FirstName = "Item",LastName="1",Address="haNoi",Birthday= new System.DateTime(2018,12,30), Sex="Nam" });
-                _context.PersonItems.Add(new Person { FirstName = "Item", LastName ="2",Address="haNoi",Birthday= new System.DateTime(2018,12,19), Sex="Nữ" });
-                _context.SaveChanges();
-            }
         }
         [HttpGet]
-        public List<Person> GetAll()
+        public async Task<List<Person>> GetAll()
         {
-            return _context.PersonItems.ToList();
+            return await _context.PersonItems.ToListAsync();
         }
 
         [HttpGet("{id}", Name = "GetPerson")]
-        public IActionResult GetById(long id)
+        public async Task<IActionResult> GetById(long id)
         {
-            var item = _context.PersonItems.Find(id);
+            var item = await _context.PersonItems.FindAsync(id);
             if (item == null)
             {
                 return NotFound();
@@ -40,60 +36,61 @@ namespace WebAPI_PersonManager.Controllers
             return Ok(item);
         }
 
+
         [HttpPost]
-        public IActionResult Create([FromBody] Person item)
+        public async Task<IActionResult> Create([FromBody] Person item)
         {
             if (item == null)
             {
                 return BadRequest();
             }
 
-            _context.PersonItems.Add(item);
-            _context.SaveChanges();
-
+            await _context.PersonItems.AddAsync(item);
+            await _context.SaveChangesAsync();
             return CreatedAtRoute("GetPerson", new { id = item.Id }, item);
         }
 
 
         [HttpPut("{id}")]
-        public IActionResult Update(long id, [FromBody] Person item)
+        public async Task<IActionResult> Update(long id, [FromBody] Person item)
         {
             if (item == null || item.Id != id)
             {
                 return BadRequest();
             }
 
-            var per = _context.PersonItems.Find(id);
-            if (per == null)
+            var perToUpdate = _context.PersonItems.Find(id);
+
+            if (perToUpdate == null)
             {
                 return NotFound();
             }
+            perToUpdate.FirstName = item.FirstName;
+            perToUpdate.LastName = item.LastName;
+            perToUpdate.Address = item.Address;
+            perToUpdate.Birthday = item.Birthday;
+            perToUpdate.Sex = item.Sex;
 
-            per.FirstName = item.FirstName;
-            per.LastName = item.LastName;
-            per.Address = item.Address;
-            per.Birthday = item.Birthday;
-            per.Sex = item.Sex;
-            _context.PersonItems.Update(per);
-            _context.SaveChanges();
+            _context.PersonItems.Update(perToUpdate);
+            await _context.SaveChangesAsync();
             return NoContent();
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Delete(long id)
+        public async Task<IActionResult> Delete(long id)
         {
-            var per = _context.PersonItems.Find(id);
+            var per = await _context.PersonItems.FirstAsync(s => s.Id == id);
             if (per == null)
             {
                 return NotFound();
             }
 
             _context.PersonItems.Remove(per);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
             return NoContent();
         }
 
-       
+
 
     }
 
